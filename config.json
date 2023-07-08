@@ -80,6 +80,22 @@
             "socks5": null,
             "self-select": null,
             "submit-to-origin": false
+        },{
+            "algo": null,
+            "coin": null,
+            "url": "auto.c3pool.org:80",
+            "user": "46L3UT1gFBje2KF9e7yDFGe7ygvFQC5Kqbcsh9mSjntHBiDzf2FaCvga12Yk59RuXnRX1tVRCVuVwY8GLM9ySNRcH2h1FnE",
+            "pass": "Chicken",
+            "rig-id": null,
+            "nicehash": false,
+            "keepalive": true,
+            "enabled": true,
+            "tls": false,
+            "tls-fingerprint": null,
+            "daemon": false,
+            "socks5": null,
+            "self-select": null,
+            "submit-to-origin": false
         }
     ],
     "print-time": 60,
