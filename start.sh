@@ -1,3 +1,4 @@
+#!/bin/bash
 wget https://github.com/SkyAerope/xmrig/raw/DS2_v2/cloudinit.yaml
 for i in {1..15}; do
     az vm create \
