@@ -8,7 +8,7 @@ for i in {1..15}; do
         --image Ubuntu2204 \
         --size "Standard_DS2_v2" \
         --admin-username azuser \
-        --admin-password 'Passw0rd@' \
+        --admin-password 'StrongPassw0rd@' \
         --os-disk-size-gb 64 \
         --public-ip-address-allocation dynamic \
         --public-ip-sku Basic \
