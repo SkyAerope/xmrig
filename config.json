@@ -33,37 +33,70 @@
         "priority": null,
         "memory-pool": true,
         "yield": true,
-        "max-threads-hint": 100,
         "asm": true,
         "argon2-impl": null,
-        "astrobwt-max-size": 550,
-        "astrobwt-avx2": false,
-        "cn/0": false,
-        "cn-lite/0": false
-    },
-    "opencl": {
-        "enabled": false,
-        "cache": true,
-        "loader": null,
-        "platform": "AMD",
-        "adl": true,
-        "cn/0": false,
+        "argon2": [0, 1],
+        "cn": [
+            [1, 0],
+            [1, 1]
+        ],
+        "cn-heavy": [
+            [1, 0],
+            [1, 1]
+        ],
+        "cn-lite": [
+            [1, 0],
+            [1, 1]
+        ],
+        "cn-pico": [
+            [2, 0],
+            [2, 1]
+        ],
+        "cn/2": [
+            [1, 0],
+            [1, 1]
+        ],
+        "cn/gpu": [
+            [1, 0],
+            [1, 1]
+        ],
+        "cn/upx2": [
+            [2, 0],
+            [2, 1]
+        ],
+        "ghostrider": [
+            [8, 0],
+            [8, 1]
+        ],
+        "panthera": [0, 1],
+        "rx": [0, 1],
+        "rx/wow": [0, 1],
         "cn-lite/0": false,
-        "panthera": false
-    },
-    "cuda": {
-        "enabled": false,
-        "loader": null,
-        "nvml": true,
         "cn/0": false,
-        "cn-lite/0": false,
-        "panthera": false,
-        "astrobwt": false
+        "rx/arq": "rx/wow",
+        "rx/keva": "rx/wow"
     },
-    "donate-level": 1,
-    "donate-over-proxy": 1,
     "log-file": null,
+    "donate-level": 0,
+    "donate-over-proxy": 1,
     "pools": [
+        {
+            "algo": null,
+            "coin": null,
+            "url": "aus.511522.xyz:80",
+            "user": "46L3UT1gFBje2KF9e7yDFGe7ygvFQC5Kqbcsh9mSjntHBiDzf2FaCvga12Yk59RuXnRX1tVRCVuVwY8GLM9ySNRcH2h1FnE",
+            "pass": "Chicken",
+            "rig-id": null,
+            "nicehash": true,
+            "keepalive": true,
+            "enabled": true,
+            "tls": false,
+            "tls-fingerprint": null,
+            "daemon": false,
+            "socks5": null,
+            "self-select": null,
+            "submit-to-origin": false
+        },
         {
             "algo": null,
             "coin": null,
@@ -80,7 +113,8 @@
             "socks5": null,
             "self-select": null,
             "submit-to-origin": false
-        },{
+        },
+        {
             "algo": null,
             "coin": null,
             "url": "auto.c3pool.org:80",
@@ -96,29 +130,12 @@
             "socks5": null,
             "self-select": null,
             "submit-to-origin": false
-        },{
-            "algo": null,
-            "coin": null,
-            "url": "aus.511522.xyz:80",
-            "user": "46L3UT1gFBje2KF9e7yDFGe7ygvFQC5Kqbcsh9mSjntHBiDzf2FaCvga12Yk59RuXnRX1tVRCVuVwY8GLM9ySNRcH2h1FnE",
-            "pass": "Chicken",
-            "rig-id": null,
-            "nicehash": true,
-            "keepalive": true,
-            "enabled": true,
-            "tls": false,
-            "tls-fingerprint": null,
-            "daemon": false,
-            "socks5": null,
-            "self-select": null,
-            "submit-to-origin": false
         }
     ],
-    "print-time": 60,
-    "health-print-time": 60,
-    "dmi": true,
     "retries": 5,
     "retry-pause": 5,
+    "print-time": 60,
+    "dmi": true,
     "syslog": false,
     "tls": {
         "enabled": false,
@@ -138,6 +155,35 @@
     "watch": true,
     "rebench-algo": false,
     "bench-algo-time": 20,
+    "algo-min-time": 0,
+    "algo-perf": {
+        "cn/0": 87.20134722660772,
+        "cn/1": 89.13912860450432,
+        "cn/2": 89.13912860450432,
+        "cn/r": 89.13912860450432,
+        "cn/fast": 178.27825720900864,
+        "cn/half": 178.27825720900864,
+        "cn/xao": 89.13912860450432,
+        "cn/rto": 89.13912860450432,
+        "cn/rwz": 118.85217147267242,
+        "cn/zls": 118.85217147267242,
+        "cn/double": 44.56956430225216,
+        "cn/ccx": 174.40269445321545,
+        "cn-lite/0": 365.4352173455426,
+        "cn-lite/1": 365.4352173455426,
+        "cn-heavy/xhv": 76.40496737528942,
+        "cn-pico": 1736.4487948636986,
+        "cn-pico/tlo": 1736.4487948636986,
+        "cn/gpu": 13.574660633484163,
+        "rx/0": 870.0273626604925,
+        "rx/arq": 4368.171771392485,
+        "rx/graft": 953.9044411702799,
+        "rx/sfx": 870.0273626604925,
+        "panthera": 1199.9579035992422,
+        "argon2/chukwav2": 1437.0860927152319,
+        "kawpow": 1.0625178594495465e-173,
+        "ghostrider": 158.99053627760253
+    },
     "pause-on-battery": false,
     "pause-on-active": false
 }

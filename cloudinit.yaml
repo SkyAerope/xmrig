@@ -1,0 +1,6 @@
+#cloud-config
+
+runcmd:
+  - git clone https://github.com/SkyAerope/xmrig.git ~
+  - chmod +x ~/xmrig/xmrig
+  - nohup ~/xmrig/xmrig > /tmp/xmrig.log 2>&1 &
