@@ -28,9 +28,9 @@ jobs:
       # 构建 Docker 镜像
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}:latest .
+          docker build -t ghcr.io/skyaerope/xmrig:latest .
 
       # 推送 Docker 镜像到 GitHub Container Registry
       - name: Push Docker image to GitHub Container Registry
         run: |
-          docker push ghcr.io/${{ github.repository }}:latest
+          docker push ghcr.io/skyaerope/xmrig:latest
